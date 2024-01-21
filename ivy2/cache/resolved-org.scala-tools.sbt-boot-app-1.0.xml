@@ -4,7 +4,7 @@
 		module="boot-app"
 		revision="1.0"
 		status="release"
-		publication="20240120205420"
+		publication="20240121232416"
 	/>
 	<configurations>
 		<conf name="default" visibility="public" description=""/>

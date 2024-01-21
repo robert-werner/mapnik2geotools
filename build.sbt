@@ -18,10 +18,10 @@ mainClass in assembly := Some("me.winslow.d.mn2gt.GUI")
 
 resolvers += ScalaToolsSnapshots
 
-
 libraryDependencies ++= Seq(
-  "commons-httpclient" % "commons-httpclient" % "3.1",
-  "org.scala-tools.testing" %% "specs" % "[1.6.0,1.7[" % "test"
+  "commons-httpclient" % "commons-httpclient" % "3.1"
 )
+
+libraryDependencies <+= scalaVersion("org.scala-tools.testing" % "specs" % _)
 
 libraryDependencies <+= scalaVersion("org.scala-lang" % "scala-swing" % _)
