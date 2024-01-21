@@ -11,7 +11,7 @@ resolvers += Resolver.url("ScalaSbt Sbt Plugin Snapshots Repository", new URL("h
 
 resolvers += Resolver.url("Sonatype OSS", new URL("https://oss.sonatype.org/content/repositories/snapshots/"))
 
-resolvers += "Local Maven Repository" at "file://"+Path.userHome.absolutePath+"/.m2/repository"
+resolvers += "Local Maven Repository" at "file://" + baseDirectory.value + "../.m2/repository"
 
 addSbtPlugin("com.eed3si9n" % "sbt-assembly" % "0.7.3")
 
