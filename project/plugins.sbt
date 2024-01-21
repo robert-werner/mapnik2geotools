@@ -9,8 +9,6 @@ resolvers += Resolver.url("ScalaSbt Ivy Snapshots Repository", new URL("https://
 
 resolvers += Resolver.url("ScalaSbt Sbt Plugin Snapshots Repository", new URL("https://repo.scala-sbt.org/scalasbt/sbt-plugin-snapshots/"))(Resolver.ivyStylePatterns)
 
-resolvers += Resolver.url("ScalaSbt Sbt Plugin Snapshots Repository", new URL("https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/"))(Resolver.ivyStylePatterns)
-
 resolvers += Resolver.url("Sonatype OSS", new URL("https://oss.sonatype.org/content/repositories/snapshots/"))
 
 resolvers += "Local Maven Repository" at "file://"+Path.userHome.absolutePath+"/.m2/repository"
